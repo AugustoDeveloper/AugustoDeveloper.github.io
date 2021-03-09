@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap');
+
+html, body {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    color: white;
+    font-family: Montserrat, sans-serif;
+
+    background-image: linear-gradient(to bottom, #363648 , #4E4F67);
+    background-repeat: repeat-y;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+header, main, footer {
+    margin: 50px 100px;
+}
+
+header {
+    font-weight: bolder;
+}
+
+.about {
+    position: relative;
+    margin: 20px 0px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.about > button {
+    z-index: 11;
+    background-color: #363648;
+}
+
+.about-line {
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.repos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.repo {
+    position: relative;
+}
+
+.repo-img-background {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 350px;
+    width: 100%;
+}
+
+.img-text-wrapper {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.img-text-wrapper .subtitle {
+    transition: 1s;
+    color: transparent;
+    font-weight: 600;
+}
+
+.img-blur {
+    transition: 1s;
+    filter: brightness(10%);
+}
+
+.img-text-wrapper:hover .subtitle {
+    color: lightseagreen;
+    font-weight: 600;
+}
+
+.logo-wrapper svg {
+    margin-bottom: 20px;
+}
+
+.logo-wrapper-long-reponame div {
+    margin-bottom: 20px;
+}
+
+.logo-wrapper-long-reponame a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+.logo-wrapper a {
+    text-decoration: none;
+    color: white;
+    font-weight: 800;
+}
