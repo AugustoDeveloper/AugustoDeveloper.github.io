@@ -15,7 +15,7 @@ html, body {
 }
 
 header, main, footer {
-    margin: 50px 100px;
+    margin: 50px 5%;
 }
 
 header {
@@ -48,19 +48,22 @@ main {
 }
 
 .repos {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    flex-flow: row wrap;
+    
 }
 
 .repo {
     position: relative;
+    flex-basis: 400px;
+    flex-grow: 1;
 }
 
 .repo-img-background {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 350px;
+    height: 400px;
     width: 100%;
 }
 
